@@ -67,7 +67,7 @@ heroku config:set CORS_ALLOWED_ORIGINS='https://your-frontend-url.vercel.app'
 ```bash
 # backend/Procfile
 web: gunicorn upi_fraud_detection.wsgi --log-file -
-release: python manage.py migrate
+release: python manage.py migrate --run-syncdb
 ```
 
 6. **Update requirements.txt**:
