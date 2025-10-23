@@ -161,7 +161,7 @@ nano .env
 8. **Run Migrations**:
 
 ```bash
-python manage.py migrate
+python manage.py migrate --run-syncdb
 python manage.py collectstatic
 ```
 
@@ -337,7 +337,7 @@ DATABASES = {
 3. **Run Migrations**:
 
 ```bash
-python manage.py migrate
+python manage.py migrate --run-syncdb
 ```
 
 ---
